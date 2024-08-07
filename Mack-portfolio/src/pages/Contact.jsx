@@ -9,12 +9,14 @@ export default function Contact() {
         message: "",
     });
 
+    // error messages for empty fields
     const [errors, setErrors] = useState({
         name: '',
         email: '',
         message: '',
       });
-
+    
+    // success message after submission
     const [successMessage, setSuccessMessage] = useState('');
 
     // set changes of form input
@@ -31,28 +33,33 @@ export default function Contact() {
         });
     };
     
+    // validating the fields are inputted
     const validateForm = () => {
         let isValid = true;
         let newErrors = { name: '', email: '', message: '' };
     
         if (!form.name) {
           newErrors.name = 'Name is required.';
+          isValid = false;
         }
 
         if (!form.email) {
           newErrors.email = 'Email address is required.';
         } else if (!/\S+@\S+\.\S+/.test(form.email)) {
           newErrors.email = 'Email address is invalid.';
+          isValid = false;
         }
 
         if (!form.message) {
           newErrors.message = 'Message is required.';
+          isValid = false;
         }
     
         setErrors(newErrors);
         return isValid;
     };
 
+    // on submit, email draft created with succes message
     const handleSubmit = (e) => {
         e.preventDefault();
         
