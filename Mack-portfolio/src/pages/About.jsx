@@ -1,3 +1,5 @@
+import { github, linkedin, resume } from "../assets/icons"
+
 export default function About() {
     return (
         <section className="container col-md-10" id="about">
@@ -15,11 +17,11 @@ export default function About() {
                             
                             <div className="d-flex flex-wrap">
                                 <a href="https://github.com/mackemo/" target="_blank">
-                                    <img className="icon" src="" alt="Github"/></a>
+                                    <img className="icon" src={github} alt="Github"/></a>
                                 <a href="https://www.linkedin.com/in/mackenzie-moore1410" target="_blank">
-                                    <img className="icon" src="" alt="LinkedIn"/></a>
+                                    <img className="icon" src={linkedin} alt="LinkedIn"/></a>
                                 <a href="https://docs.google.com/document/d/1llnGyzWal6S0qqCwzfovvd3K2aydl_NUWIdym-sdSQ4/edit" target="_blank">
-                                    <img className="icon" src="" alt="Resume"/></a>
+                                    <img className="icon" src={resume} alt="Resume"/></a>
                             </div>
                         </div>
                         
