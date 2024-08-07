@@ -17,10 +17,34 @@ export default function Contact() {
             [name]: value,
         });
     };
-        
+    
+    const validateForm = () => {
+        let isValid = true;
+        let newErrors = { name: '', email: '', message: '' };
+    
+        if (!form.name) {
+          newErrors.name = 'Name is required.';
+        }
+
+        if (!form.email) {
+          newErrors.email = 'Email address is required.';
+        } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+          newErrors.email = 'Email address is invalid.';
+        }
+
+        if (!form.message) {
+          newErrors.message = 'Message is required.';
+        }
+    
+        setErrors(newErrors);
+        return isValid;
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
-       
+        
+        if (!validateForm()) return;
+
         console.log('Form submitted:', form);
         // reset form after submission
         setForm({
