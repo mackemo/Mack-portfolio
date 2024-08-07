@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../styles/contact.css'
 
 export default function Contact() {
     
@@ -93,54 +94,53 @@ export default function Contact() {
                         <br></br><span className="label fw-medium">Address: </span> 4001 S West Shore Blvd, Tampa FL 33611
                         </p>
                     </div>
-                </div>  
+                </div> 
+                <div className="contact-section">
+                {successMessage && <p className="success-message">{successMessage}</p>}
+                    <form onSubmit={handleSubmit}>
+                        <div className="form-group">
+                            <label htmlFor="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                value={form.name}
+                                onChange={handleChange}
+                                required
+                            />
+                            {errors.name && <p className="error-message">{errors.name}</p>}
+                        </div>
+                    
+                        <div className="form-group">
+                            <label htmlFor="email">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={form.email}
+                                onChange={handleChange}
+                                required
+                            />
+                            {errors.email && <p className="error-message">{errors.email}</p>}
+                        </div>
+                    
+                        <div className="form-group">
+                            <label htmlFor="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                value={form.message}
+                                onChange={handleChange}
+                                required
+                            ></textarea>
+                            {errors.message && <p className="error-message">{errors.message}</p>}
+                        </div>
+                    
+                        <button type="submit">Submit</button>
+                    </form>
+                </div> 
             </div>
         </section>
-
-        <div className="contact-section">
-        {successMessage && <p className="success-message">{successMessage}</p>}
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="name">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={form.name}
-                        onChange={handleChange}
-                        required
-                    />
-                    {errors.name && <p className="error-message">{errors.name}</p>}
-                </div>
-            
-                <div className="form-group">
-                    <label htmlFor="email">Email Address</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={form.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    {errors.email && <p className="error-message">{errors.email}</p>}
-                </div>
-            
-                <div className="form-group">
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={form.message}
-                        onChange={handleChange}
-                        required
-                    ></textarea>
-                    {errors.message && <p className="error-message">{errors.message}</p>}
-                </div>
-            
-                <button type="submit">Submit</button>
-            </form>
-        </div>
         </>
     );
 };
