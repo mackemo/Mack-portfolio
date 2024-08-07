@@ -9,12 +9,25 @@ export default function Contact() {
         message: "",
     });
 
+    const [errors, setErrors] = useState({
+        name: '',
+        email: '',
+        message: '',
+      });
+
+    const [successMessage, setSuccessMessage] = useState('');
+
     // set changes of form input
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForm({
             ...form,
             [name]: value,
+        });
+
+        setErrors({
+            ...errors,
+            [name]: '',
         });
     };
     
@@ -43,7 +56,14 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        if (!validateForm()) return;
+        if (!validateForm()) {
+            return;
+        } else {
+            const mailtoLink = `mailto:mackenzielmoore14@gmail.com?subject=Contact from 
+            ${form.name}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`)}`;
+            window.location.href = mailtoLink;
+            setSuccessMessage('Your message has been prepared in your email client!');
+        }
 
         console.log('Form submitted:', form);
         // reset form after submission
@@ -71,6 +91,7 @@ export default function Contact() {
         </section>
 
         <div className="contact-section">
+        {successMessage && <p className="success-message">{successMessage}</p>}
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
@@ -82,6 +103,7 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                     />
+                    {errors.name && <p className="error-message">{errors.name}</p>}
                 </div>
             
                 <div className="form-group">
@@ -94,6 +116,7 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                     />
+                    {errors.email && <p className="error-message">{errors.email}</p>}
                 </div>
             
                 <div className="form-group">
@@ -105,6 +128,7 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                     ></textarea>
+                    {errors.message && <p className="error-message">{errors.message}</p>}
                 </div>
             
                 <button type="submit">Submit</button>
