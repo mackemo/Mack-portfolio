@@ -1,3 +1,6 @@
+import icons from '../assets/icons'
+import headshot from '../assets/images/headshot.jpg'
+
 export default function About() {
     return (
         <section className="container col-md-10" id="about">
@@ -15,16 +18,16 @@ export default function About() {
                             
                             <div className="d-flex flex-wrap">
                                 <a href="https://github.com/mackemo/" target="_blank">
-                                    <img className="icon" src="" alt="Github"/></a>
+                                    <img className="icon" src={icons.github} alt="Github"/></a>
                                 <a href="https://www.linkedin.com/in/mackenzie-moore1410" target="_blank">
-                                    <img className="icon" src="" alt="LinkedIn"/></a>
+                                    <img className="icon" src={icons.linkedin} alt="LinkedIn"/></a>
                                 <a href="https://docs.google.com/document/d/1llnGyzWal6S0qqCwzfovvd3K2aydl_NUWIdym-sdSQ4/edit" target="_blank">
-                                    <img className="icon" src="" alt="Resume"/></a>
+                                    <img className="icon" src={icons.resume} alt="Resume"/></a>
                             </div>
                         </div>
                         
                         <div className="col-md-6 d-flex justify-content-center">
-                            <img className="img-mack col-md-6" src="" alt="Mackenzie Moore"/>
+                            <img className="img-mack col-md-6" src={headshot} alt="Mackenzie Moore"/>
                         </div>
                     </div>
                 </div>
