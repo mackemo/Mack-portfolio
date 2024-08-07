@@ -22,7 +22,7 @@ import resume from './icons/resume.png';
 import sequelize from './icons/sequelize.png';
 import vscode from './icons/vscode.png';
 
-export {
+export default {
     agile, api, bootstrap, css, express, github, handlebars, html,
     jquery, js, json, linkedin, mongo, mvc, mysql, node, nosql,
     postgresql, pwa, react, resume, sequelize, vscode

@@ -1,5 +1,5 @@
-import { github, linkedin, resume } from '../assets/icons'
-import headshot from '../assets/images'
+import icons from '../assets/icons'
+import headshot from '../assets/images/headshot.jpg'
 
 export default function About() {
     return (
@@ -18,11 +18,11 @@ export default function About() {
                             
                             <div className="d-flex flex-wrap">
                                 <a href="https://github.com/mackemo/" target="_blank">
-                                    <img className="icon" src={github} alt="Github"/></a>
+                                    <img className="icon" src={icons.github} alt="Github"/></a>
                                 <a href="https://www.linkedin.com/in/mackenzie-moore1410" target="_blank">
-                                    <img className="icon" src={linkedin} alt="LinkedIn"/></a>
+                                    <img className="icon" src={icons.linkedin} alt="LinkedIn"/></a>
                                 <a href="https://docs.google.com/document/d/1llnGyzWal6S0qqCwzfovvd3K2aydl_NUWIdym-sdSQ4/edit" target="_blank">
-                                    <img className="icon" src={resume} alt="Resume"/></a>
+                                    <img className="icon" src={icons.resume} alt="Resume"/></a>
                             </div>
                         </div>
                         
