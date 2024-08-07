@@ -1,11 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
 
 
-function NavBar() {
+function Header() {
   const currentPage = useLocation().pathname;
 
   return (
+    <>
     <ul className="nav nav-tabs">
+    <h2 className='header'>Mackenzie Moore</h2>
       <li className="nav-item">
         <Link
           to="/"
@@ -39,7 +41,8 @@ function NavBar() {
         </Link>
       </li>
     </ul>
+    </>
   );
 }
 
-export default NavBar;
+export default Header;

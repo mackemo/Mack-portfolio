@@ -8,7 +8,7 @@ export default function About() {
                 <div>
                     <div className="d-flex flex-wrap align-items-center m-4">
                         <div className="intro col-md-6 d-flex flex-column">
-                            <h3 className="name fw-normal">Hello! <br></br> I'm Mackenzie Moore</h3> 
+                            <h3 className="name fw-normal">Hello!</h3> 
                             <h4 className="fs-3 fw-normal fst-italic">Aspiring Software Developer</h4>
                             <p className="fs-5">
                                 I'm embarking on my coding journey through Vanderbilt University's bootcamp! 
