@@ -1,4 +1,5 @@
-import { github, linkedin, resume } from "../assets/icons"
+import { github, linkedin, resume } from '../assets/icons'
+import headshot from '../assets/images'
 
 export default function About() {
     return (
@@ -26,7 +27,7 @@ export default function About() {
                         </div>
                         
                         <div className="col-md-6 d-flex justify-content-center">
-                            <img className="img-mack col-md-6" src="" alt="Mackenzie Moore"/>
+                            <img className="img-mack col-md-6" src={headshot} alt="Mackenzie Moore"/>
                         </div>
                     </div>
                 </div>
