@@ -1,0 +1,247 @@
+/* font imported from google fonts */
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: linear-gradient(to right, rgb(236, 233, 233), rgb(236, 233, 233), rgb(236, 233, 233), 
+    white, rgb(236, 233, 233), rgb(236, 233, 233), rgb(236, 233, 233));
+}
+
+:root {
+    --blu: #7777a1e5;
+    --whi: rgb(236, 233, 233);
+    --sha: 0 0 20px 20px rgb(195, 196, 216);
+}
+
+header {
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(236, 233, 233), rgb(236, 233, 233), rgb(236, 233, 233), 
+    white, rgb(236, 233, 233), rgb(236, 233, 233), rgb(236, 233, 233));
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--blu);
+    font-size: 30px;
+}  
+
+
+
+/* nav links */
+.nav-link {
+    color: var(--blu);
+    font-size: 20px;
+    margin: 40px 50px 0 20px;
+}
+
+.nav-link:hover {
+    background-color: #a8a8c4;
+    border-radius: 20%;
+    color:white;
+}
+
+
+
+/* about */
+#about {
+    padding: 0 0 0 70px;
+}
+
+.intro {
+    padding: 80px 80px 80px 150px;
+}
+
+.name {
+    font-size: 40px;
+    color: var(--blu);
+    margin-bottom: 30px;
+}
+
+.img-mack {
+    height: 400px;
+    width: auto;
+    border-radius: 100%;
+    box-shadow: var(--sha);
+}
+/* github, linkedin, resume */
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    margin: 15px 15px;
+}
+
+.icon:hover {
+    opacity: 1.0;
+    box-shadow: 0 0 3px 3px rgb(195, 196, 216);
+}
+
+
+
+/* skills */
+#skills {
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+.skills {
+    height: auto;
+    width: 100px;
+    opacity: 0.8;
+}
+
+#skills h5 {
+    background-color: var(--blu);
+    color: white;
+}
+
+
+
+/* projects */
+#projects {
+    margin-bottom: 300px;
+}
+
+.work-topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.main-work {
+    border: solid var(--blu);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    height: 250px;
+    width: 1115px;
+    margin: 20px;
+}
+
+.work {
+    border: solid var(--blu);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+}
+
+.main-work h5, .work h5 {
+    text-align: center;
+    background-color: #434357e5;
+    color: white;
+}
+
+.main-work img {
+    height: 250px;
+    width: 1115px;
+    object-fit: cover;
+}
+
+.work img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover; 
+}
+
+.main-work:hover, .work:hover {
+    opacity: 1.0;
+    box-shadow: var(--sha);
+}
+
+
+
+/* contact */
+#contact {
+    margin-bottom: 300px;
+}
+
+.contact {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: var(--sha);
+}
+
+.label {
+    color: var(--blu);
+}
+
+
+
+/* footer */
+footer {
+    margin-bottom: 50px;
+}
+
+footer h5 {
+    font-weight: 300;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 1500px) {
+    .intro {
+        padding: 40px 40px 40px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #about {
+        padding: 0;
+    }
+
+    .img-mack {
+        height: 300px;
+        width: auto;
+    }
+
+    .intro {
+        padding: 80px 0 50px 20px;
+    }
+
+    .work {
+        height: 200px;
+        width: 200px;
+    }
+
+    .work img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav-link {
+        margin: 40px 0 0 0;
+        font-size: 20px;
+    }
+
+    #about {
+        padding: 0;
+    }
+
+    .work {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 40px;
+    }
+
+    .work h5 {
+        font-size: 15px;
+    }
+
+    .work img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .contact {
+        font-size: 20px;
+    }
+}
