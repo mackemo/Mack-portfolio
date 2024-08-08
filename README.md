@@ -16,11 +16,11 @@ My Portfolio. Welcome!
   -[Acknowledgement](#Acknowledgement)
   -[Questions](#Questions)
 
-<img src="./Mack-portfolio/src/assets/screenshots/ss1.png"/>
-<img src="./Mack-portfolio/src/assets/screenshots/ss2.png"/>
-<img src="./Mack-portfolio/src/assets/screenshots/ss3.png"/>
-<img src="./Mack-portfolio/src/assets/screenshots/ss4.png"/>
-<img src="./Mack-portfolio/src/assets/screenshots/ss5.png"/>
+<img src="./src/assets/screenshots/ss1.png"/>
+<img src="./src/assets/screenshots/ss2.png"/>
+<img src="./src/assets/screenshots/ss3.png"/>
+<img src="./src/assets/screenshots/ss4.png"/>
+<img src="./src/assets/screenshots/ss5.png"/>
 
 ## Process
 
