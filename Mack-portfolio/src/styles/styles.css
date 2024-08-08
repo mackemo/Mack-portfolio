@@ -116,27 +116,28 @@ header {
     text-decoration: underline;
 }
 
-.main-work {
+.main-work, .work {
     border: solid var(--blu);
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.main-work {
     height: 250px;
     width: 1115px;
-    margin: 20px;
 }
 
 .work {
-    border: solid var(--blu);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
     height: 250px;
     width: 250px;
-    margin: 20px;
 }
 
-.main-work h5, .work h5 {
+.main-work h5, .main-info, .work h5, .info {
     text-align: center;
     background-color: #434357e5;
     color: white;
@@ -146,19 +147,43 @@ header {
     height: 250px;
     width: 1115px;
     object-fit: cover;
+    transition: opacity 0.3s ease;
 }
 
 .work img {
     height: 250px;
     width: 250px;
     object-fit: cover; 
+    transition: opacity 0.3s ease;
+}
+
+.main-info, .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    text-align: center;
+}
+
+.main-work:hover img, .work:hover img {
+    opacity: 0.5; 
+}
+
+.main-work:hover .main-info, .work:hover .info {
+    opacity: 1;
+    visibility: visible;
 }
 
 .main-work:hover, .work:hover {
     opacity: 1.0;
     box-shadow: var(--sha);
 }
-
 
 
 /* contact */
