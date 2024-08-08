@@ -10,10 +10,11 @@ export default function About() {
                         <div className="intro col-md-6 d-flex flex-column">
                             <h3 className="name fw-normal">Hello!</h3> 
                             <h4 className="fs-3 fw-normal fst-italic">Aspiring Software Developer</h4>
-                            <p className="fs-5">
+                            <p className="fs-6">
                                 I'm embarking on my coding journey through Vanderbilt University's bootcamp! 
-                                I am dedicated to continuously challenging myself to learn the skills 
-                                required for creating high-quality user experiences with efficiency. 
+                                With my background in Biology, I am dedicated to continuously challenging myself 
+                                and applying meticulous detail to every project I complete. I am committed to learning the skills 
+                                required for efficiently creating high-quality user experiences.
                             </p> 
                             
                             <div className="d-flex flex-wrap">
