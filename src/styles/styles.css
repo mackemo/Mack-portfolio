@@ -129,7 +129,7 @@ header {
 
 .main-work {
     height: 250px;
-    width: 1115px;
+    width: 550px;
 }
 
 .work {
@@ -145,7 +145,7 @@ header {
 
 .main-work img {
     height: 250px;
-    width: 1115px;
+    width: 550px;
     object-fit: cover;
     transition: opacity 0.3s ease;
 }
