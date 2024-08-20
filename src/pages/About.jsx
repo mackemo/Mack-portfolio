@@ -11,10 +11,14 @@ export default function About() {
                             <h3 className="name fw-normal">Hello!</h3> 
                             <h4 className="fs-3 fw-normal fst-italic">Aspiring Software Developer</h4>
                             <p className="fs-6">
-                                I'm embarking on my coding journey through Vanderbilt University's bootcamp! 
-                                With my background in Biology, I am dedicated to continuously challenging myself 
-                                and applying meticulous detail to every project I complete. I am committed to learning the skills 
-                                required for efficiently creating high-quality user experiences.
+                                I’ve embarked on my coding journey through Vanderbilt University's Full Stack Web Development bootcamp, 
+                                where I earned a certificate with perfect scores on all assignments. This achievement highlights my commitment 
+                                and passion for excellence in software development!
+                                <br></br>
+                                <br></br>
+                                With a Bachelor’s degree in Biology from the University of Tampa, I bring a detail-oriented approach to every 
+                                project. I am dedicated to continuously challenging myself and mastering the skills needed to deliver high-quality 
+                                user experiences.
                             </p> 
                             
                             <div className="d-flex flex-wrap">
