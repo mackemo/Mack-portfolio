@@ -17,6 +17,16 @@ export default function Projects() {
                                 </div>
                             </a>
                         </div>
+                        <div className="main-work">
+                            <a href="https://text-based-adventure-game.onrender.com/" target="_blank">
+                                <img src={images.game} alt="Adventure Game"/>
+                                <h5>Adventure Game</h5>
+                                <div className="main-info">
+                                    <a href="https://github.com/Flem-House-Dev/Text-Based-Adventure-Game" target="_blank">link to repo</a>
+                                    <p>MongoDB, Express.js, React.js, Node.js, Team Project</p>
+                                </div>
+                            </a>
+                        </div>
                         <br></br>
                         <div className="work">
                             <a href="https://mackemo.github.io/prework-study-guide/" target="_blank">
