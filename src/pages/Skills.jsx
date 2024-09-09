@@ -12,6 +12,9 @@ export default function Skills() {
                         <img className="skills" src={icons.html} alt="HTML"/>
                         <img className="skills" src={icons.css} alt="CSS"/>
                         <img className="skills" src={icons.js} alt="Javascript"/>
+                        <img className="skills" src={icons.python} alt="Python"/>
+                        <img className="skills" src={icons.c} alt="C#"/>
+                        <img className="skills" src={icons.java} alt="Java"/>
                     </div>
                     <div className="text-center m-4">
                 
@@ -45,6 +48,7 @@ export default function Skills() {
                         <img className="skills" src={icons.json} alt="JSON"/>
                         <img className="skills" src={icons.vscode} alt="VScode"/>
                         <img className="skills" src={icons.agile} alt="Agile"/>
+                        <img className="skills" src={icons.aws} alt="AWS"/>
                     </div>
                 </div>
             </div>
