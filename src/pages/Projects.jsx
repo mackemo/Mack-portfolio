@@ -13,7 +13,7 @@ export default function Projects() {
                                 <div className="main-info">
                                 <h5>Tech Blog</h5>
                                     <a href="https://github.com/mackemo/12-tech-blog" target="_blank">link to repo</a>
-                                    <p>Handlebars.js, Sequelize, Bootstrap</p>
+                                    <p>Javascript, Handlebars.js, Sequelize, Bootstrap</p>
                                 </div>
                             </a>
                         </div>
@@ -24,6 +24,16 @@ export default function Projects() {
                                 <h5>Adventure Game</h5>
                                     <a href="https://github.com/Flem-House-Dev/Text-Based-Adventure-Game" target="_blank">link to repo</a>
                                     <p>MongoDB, Express.js, React.js, Node.js, Team Project</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="main-work">
+                            <a href="https://py-ex-tech-news-784b646bd364.herokuapp.com/" target="_blank">
+                                <img src={images.news} alt="Tech News"/>
+                                <div className="main-info">
+                                <h5>Tech News</h5>
+                                    <a href="https://github.com/mackemo/python-newsfeed" target="_blank">link to repo</a>
+                                    <p>Python, Jinja2, Flask, SQLAlchemy</p>
                                 </div>
                             </a>
                         </div>
