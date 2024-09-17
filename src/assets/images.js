@@ -1,5 +1,6 @@
 import blog from './images/blog.png';
 import charge from './images/charge.png';
+import chat from './images/chat.png';
 import ecom from './images/ecom.png';
 import emp from './images/emp.png';
 import game from './images/game.png'
@@ -17,6 +18,6 @@ import weather from './images/weather.png';
 
 
 export default {
-    blog, charge, ecom, emp, game, headshot, news, note, payroll,
+    blog, charge, chat, ecom, emp, game, headshot, news, note, payroll,
     prework, readme, social, svg, task, tech, weather
 };

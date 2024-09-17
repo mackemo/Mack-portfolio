@@ -18,12 +18,12 @@ export default function Projects() {
                             </a>
                         </div>
                         <div className="main-work">
-                            <a href="https://text-based-adventure-game.onrender.com/" target="_blank">
-                                <img src={images.game} alt="Adventure Game"/>
+                            <a href="https://mackemo-chatbot.streamlit.app/" target="_blank">
+                                <img src={images.chat} alt="Chatbot"/>
                                 <div className="main-info">
-                                <h5>Adventure Game</h5>
-                                    <a href="https://github.com/Flem-House-Dev/Text-Based-Adventure-Game" target="_blank">link to repo</a>
-                                    <p>MongoDB, Express.js, React.js, Node.js, Team Project</p>
+                                <h5>Chatbot</h5>
+                                    <a href="https://github.com/mackemo/my-chatbot" target="_blank">link to repo</a>
+                                    <p>Python, Streamlit, OpenAI</p>
                                 </div>
                             </a>
                         </div>
@@ -34,6 +34,16 @@ export default function Projects() {
                                 <h5>Tech News</h5>
                                     <a href="https://github.com/mackemo/python-newsfeed" target="_blank">link to repo</a>
                                     <p>Python, Jinja2, Flask, SQLAlchemy</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="main-work">
+                            <a href="https://text-based-adventure-game.onrender.com/" target="_blank">
+                                <img src={images.game} alt="Adventure Game"/>
+                                <div className="main-info">
+                                <h5>Adventure Game</h5>
+                                    <a href="https://github.com/Flem-House-Dev/Text-Based-Adventure-Game" target="_blank">link to repo</a>
+                                    <p>MongoDB, Express.js, React.js, Node.js, Team Project</p>
                                 </div>
                             </a>
                         </div>
