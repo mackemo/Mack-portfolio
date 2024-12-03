@@ -15,10 +15,13 @@ export default function About() {
                                 where I earned a certificate with perfect scores on all assignments. This achievement highlights my commitment 
                                 and passion for excellence in software development!
                                 <br></br>
+                                For some time, I worked at Flat Earth Networking based in Nashville as a SOC Analyst. I monitored security alerts using 
+                                SIEM tools like Qradar and resolved tickets according to documented procedures. Currently, I work as a Support Engineer
+                                at the same company and manage support tickets by documenting notes and implementing security rules in Panorama.
                                 <br></br>
-                                With a Bachelor’s degree in Biology from the University of Tampa, I bring a detail-oriented approach to every 
-                                project. I am dedicated to continuously challenging myself and mastering the skills needed to deliver high-quality 
-                                user experiences.
+                                With a Bachelor’s degree in Biology from the University of Tampa, I bring a detail-oriented approach to every task. 
+                                I am dedicated to continuously challenging myself and mastering the skills needed to effectively complete every project 
+                                that comes my way!
                             </p> 
                             
                             <div className="d-flex flex-wrap">
