@@ -3,7 +3,7 @@ import headshot from '../assets/images/headshot.jpg'
 
 export default function About() {
     return (
-        <section className="container col-md-10" id="about">
+        <section className="container col-md-12" id="about">
             <div className="row">
                 <div>
                     <div className="d-flex flex-wrap align-items-center">
