@@ -91,7 +91,7 @@ export default function Contact() {
                     <div className="contact fst-italic fw-light">
                         <p><span className="label fw-medium">Email:</span> mackenzielmoore14@gmail.com
                         <br></br><span className="label fw-medium">Phone number:</span> (314) 625-3333 
-                        <br></br><span className="label fw-medium">Address: </span> 4001 S West Shore Blvd, Tampa FL 33611
+                        <br></br><span className="label fw-medium">Address: </span> 703 Pinnacle Hill Rd, Nashville TN 37082
                         </p>
                     </div>
                 </div> 
