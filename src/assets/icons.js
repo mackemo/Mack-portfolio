@@ -1,14 +1,11 @@
 import agile from './icons/agile.png';
 import api from './icons/api.png';
-import aws from './icons/aws.png';
 import bootstrap from './icons/bootstrap.png';
-import c from './icons/c.png';
 import css from './icons/css.png';
 import express from './icons/express.png';
 import github from './icons/github.png';
 import handlebars from './icons/handlebars.png';
 import html from './icons/html.png';
-import java from './icons/java.png';
 import jquery from './icons/jquery.png';
 import js from './icons/js.png';
 import json from './icons/json.png';
@@ -27,7 +24,7 @@ import sequelize from './icons/sequelize.png';
 import vscode from './icons/vscode.png';
 
 export default {
-    agile, api, aws, bootstrap, c, css, express, github, handlebars, html, java,
+    agile, api, bootstrap, css, express, github, handlebars, html,
     jquery, js, json, linkedin, mongo, mvc, mysql, node, nosql,
     postgresql, pwa, python, react, resume, sequelize, vscode
 };
