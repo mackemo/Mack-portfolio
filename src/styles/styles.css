@@ -1,141 +1,277 @@
-/* Global Styles for Responsive Layout */
+/* font imported from google fonts */
 body {
     font-family: "Roboto Condensed", sans-serif;
     background-image: linear-gradient(to right, rgb(236, 233, 233), rgb(236, 233, 233), rgb(236, 233, 233), 
     white, rgb(236, 233, 233), rgb(236, 233, 233), rgb(236, 233, 233));
-    margin: 0;
-    padding: 0;
 }
 
-/* Flexbox for Layout */
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px; /* Prevent stretching on large screens */
-    margin: 0 auto;
-    padding: 20px;
+:root {
+    --blu: #6a6a94de;
+    --whi: rgb(236, 233, 233);
+    --sha: 0 0 20px 20px rgb(195, 196, 216);
 }
 
-header, footer {
+header {
     padding: 10px;
-    background-color: #f1f1f1;
+    background-image: linear-gradient(to right, rgb(236, 233, 233), rgb(236, 233, 233), rgb(236, 233, 233), 
+    white, rgb(236, 233, 233), rgb(236, 233, 233), rgb(236, 233, 233));
+}
+
+.header {
+    font-size: 50px;
+    color: var(--blu);
+    margin: 40px;
+    margin-right: 400px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--blu);
+    font-size: 30px;
+}  
+
+
+
+/* nav links */
+.nav-link {
+    color: var(--blu);
+    font-size: 20px;
+    margin: 40px 50px 0 20px;
+}
+
+.nav-link:hover {
+    background-color: #a8a8c4;
+    border-radius: 20%;
+    color:white;
+}
+
+
+
+/* about */
+#about {
+    padding: 0 0 0 30px;
+}
+
+.intro {
+    padding: 0px 30px 50px 80px;
+}
+
+.name {
+    font-size: 40px;
+    color: var(--blu);
+    margin-bottom: 30px;
+}
+
+.img-mack {
+    height: 400px;
+    width: auto;
+    border-radius: 100%;
+    box-shadow: var(--sha);
+}
+/* github, linkedin, resume */
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    margin: 15px 15px;
+}
+
+.icon:hover {
+    opacity: 1.0;
+    box-shadow: 0 0 3px 3px rgb(195, 196, 216);
+}
+
+
+
+/* skills */
+#skills {
+    margin-bottom: 150px;
+}
+
+.skills {
+    height: auto;
+    width: 100px;
+    opacity: 0.8;
+}
+
+#skills h5 {
+    background-color: var(--blu);
+    color: white;
+}
+
+
+
+/* projects */
+#projects {
+    margin-bottom: 150px;
+}
+
+.work-topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.main-work, .work {
+    border: solid var(--blu);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.main-work {
+    height: 250px;
+    width: 550px;
+}
+
+.work {
+    height: 250px;
+    width: 250px;
+}
+
+.main-work h5, .main-info, .work h5, .info {
+    text-align: center;
+    background-color: #434357e5;
+    color: white;
+}
+
+.main-work img {
+    height: 250px;
+    width: 550px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.work img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover; 
+    transition: opacity 0.3s ease;
+}
+
+.main-info, .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     text-align: center;
 }
 
-/* Content and Section Styling */
-.section {
+.main-info a, .info a {
+    color:#b9b9e4e5; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+.main-info a:hover, .info a:hover {
+    color: #ffffff; 
+}
+
+.main-work:hover img, .work:hover img {
+    opacity: 0.5; 
+}
+
+.main-work:hover .main-info, .work:hover .info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-work:hover, .work:hover {
+    opacity: 1.0;
+    box-shadow: var(--sha);
+}
+
+
+/* contact */
+#contact {
     margin-bottom: 50px;
-    padding: 20px;
 }
 
-/* Responsive Font Sizes */
-h1, h2, h3 {
-    font-size: calc(1.5rem + 1vw); /* Responsive font size */
+.contact {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: var(--sha);
 }
 
-/* Adjustments for larger laptops */
-@media screen and (max-width: 1600px) {
-    .container {
-        padding: 20px;
-    }
-
-    .header, .footer {
-        font-size: 1.2rem;
-    }
-
-    .section {
-        margin-bottom: 60px;
-    }
-
-    .img-mack {
-        height: 400px;
-        width: auto;
-    }
+.label {
+    color: var(--blu);
 }
 
-/* Adjustments for medium laptops (1366px width) */
-@media screen and (max-width: 1366px) {
-    h1 {
-        font-size: 3rem;
-    }
 
-    .img-mack {
-        height: 350px;
-    }
 
-    .section {
-        padding: 20px;
-    }
+/* footer */
+footer {
+    margin-bottom: 50px;
+}
 
-    .work img {
-        height: 250px;
-        width: 250px;
-    }
+footer h5 {
+    font-weight: 300;
+}
 
-    .work {
-        width: 220px;
-        height: 220px;
+
+
+/* responsive */
+@media screen and (max-width: 1500px) {
+    .intro {
+        padding: 40px 0px 40px 0;
     }
 }
 
-/* Adjustments for smaller laptops (1024px width) */
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .section {
-        padding: 15px;
+@media screen and (max-width: 1000px) {
+    #about {
+        padding: 0;
     }
 
     .img-mack {
         height: 300px;
+        width: auto;
+    }
+
+    .work {
+        height: 200px;
+        width: 200px;
     }
 
     .work img {
         height: 200px;
         width: 200px;
     }
-
-    .work {
-        width: 180px;
-        height: 180px;
-    }
 }
 
-/* Adjustments for very small screens (like 13-inch laptops or smaller tablets) */
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    .header, .footer {
-        font-size: 1rem;
-    }
-
-    .img-mack {
-        height: 250px;
-    }
-
-    .work img {
-        height: 150px;
-        width: 150px;
-    }
-
-    .work {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-/* Final adjustments for mobile (under 650px) */
 @media screen and (max-width: 650px) {
     .nav-link {
-        font-size: 16px;
+        margin: 40px 0 0 0;
+        font-size: 20px;
+    }
+
+    #about {
+        padding: 0;
+    }
+
+    .work {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 40px;
+    }
+
+    .work h5 {
+        font-size: 15px;
     }
 
     .work img {
@@ -143,12 +279,7 @@ h1, h2, h3 {
         width: 100px;
     }
 
-    .work {
-        width: 120px;
-        height: 120px;
-    }
-
     .contact {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
