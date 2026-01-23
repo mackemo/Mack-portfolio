@@ -11,19 +11,14 @@ export default function About() {
                             <h3 className="name fw-normal">Hello!</h3> 
                             <h4 className="fs-3 fw-normal fst-italic">Aspiring Software Developer</h4>
                             <p className="fs-6">
-                                I’ve embarked on my coding journey through Vanderbilt University's Full Stack Web Development bootcamp, 
-                                where I earned a certificate with perfect scores on all assignments. This achievement highlights my commitment 
-                                and passion for excellence in software development!
+                                I am a Cybersecurity Developer with Flat Earth Networking based in Nashville, TN. I have background knowledge in cybersecurity,
+                                earning a CompTIA Security+ certification. I have worked with Flat Earth first as a SOC Analyst, then transitioning into a Network 
+                                Engineer, and now as their sole developer. 
                                 <br></br>
                                 <br></br>
-                                For some time, I worked at Flat Earth Networking based in Nashville as a SOC Analyst. I monitored security alerts using 
-                                SIEM tools like Qradar and resolved tickets according to documented procedures. Currently, I work as a Support Engineer
-                                at the same company and manage support tickets by documenting notes and implementing security rules in Panorama.
-                                <br></br>
-                                <br></br>
-                                With a Bachelor’s degree in Biology from the University of Tampa, I bring a detail-oriented approach to every task. 
-                                I am dedicated to continuously challenging myself and mastering the skills needed to effectively complete every project 
-                                that comes my way!
+                                So, I have expanded my knowledge in the world of technology and have continued to learn new topics. My current interest lies in 
+                                understanding and building with AI. I have experience with creating an internal AI. Though, my common tasks with my job include 
+                                building out automations and handling bug reports.
                             </p> 
                             
                             <div className="d-flex flex-wrap">

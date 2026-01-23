@@ -9,8 +9,6 @@ export default function Skills() {
                     <div className="text-center m-4">
 
                         <h5>Languages</h5>
-                        <img className="skills" src={icons.html} alt="HTML"/>
-                        <img className="skills" src={icons.css} alt="CSS"/>
                         <img className="skills" src={icons.js} alt="Javascript"/>
                         <img className="skills" src={icons.python} alt="Python"/>
                     </div>
@@ -18,7 +16,6 @@ export default function Skills() {
                 
                         <h5>Frontend</h5>
                         <img className="skills" src={icons.react} alt="React"/>
-                        <img className="skills" src={icons.jquery} alt="jquery"/>
                         <img className="skills" src={icons.bootstrap} alt="Bootstrap"/>
                         <img className="skills" src={icons.handlebars} alt="Handlebars"/>
                     </div>
